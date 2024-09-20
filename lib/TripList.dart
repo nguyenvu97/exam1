@@ -55,7 +55,7 @@ class _TripListState extends State<TripList> {
   Widget _buildTile(Trip trip) {
     return ListTile(
       onTap: () {
-         Navigator.push(context, MaterialPageRoute(builder: (context) => Details(trip: trip)));
+        //  Navigator.push(context, MaterialPageRoute(builder: (context) => Details(trip: trip)));
       },
       contentPadding: EdgeInsets.all(25),
       title: Column(

@@ -21,6 +21,8 @@ class _MyHomePagesState extends State<MyHomePages> {
       double myData = controller.offset / 120;
       print(controller.offset);
       setState(() {
+        print("controller.offset ${controller.offset}");
+        print("myData + ${myData}");
         myTopContainer = myData;
         closeContainer = controller.offset > 50;
       });
@@ -88,6 +90,12 @@ class _MyHomePagesState extends State<MyHomePages> {
                               horizontal: 20, vertical: 10),
                           child: Row(
                             children: [
+                              discoverItems(size, Colors.orange,
+                                  "Most Favorite", "20 Items"),
+                              discoverItems(
+                                  size, Colors.blue, "Newest", "20 Items"),
+                              discoverItems(size, Colors.blueAccent,
+                                  "Super Saving", "20 Items"),
                               discoverItems(size, Colors.orange,
                                   "Most Favorite", "20 Items"),
                               discoverItems(
